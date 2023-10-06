@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Building {
 
-    private ArrayList<Room> rooms;
+    private ArrayList<Room> rooms; //Composition (vi bruger en anden klasse i denne her klasse)
     private int numberOfBathrooms;
     private int numberOfFloors;
     private boolean isOfficeBuilding;

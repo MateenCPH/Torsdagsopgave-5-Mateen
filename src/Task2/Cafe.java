@@ -11,7 +11,7 @@ public class Cafe {
 
 
     public void loadMenuData() {
-        File file = new File("coffees.txt");
+        File file = new File("Task2/coffees.txt");
         try {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()){
