@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Cafe {
 
-    ArrayList<String> coffeeMenu;
+    private ArrayList<String> coffeeMenu;
 
 
     public void loadMenuData() {
@@ -15,12 +15,17 @@ public class Cafe {
         try {
             Scanner scanner = new Scanner(file);
             while (scanner.hasNextLine()){
-                coffeeMenu.add(scanner.nextLine());
+                String coffee = scanner.nextLine();
+                coffeeMenu.add(coffee);
             }
 
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         }
 
+    }
+
+    public ArrayList<String> getCoffeeMenu() {
+        return coffeeMenu;
     }
 }
